@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<cabeça>
+    <title>Verificação de Aprovação</title>
+</cabeçalho>
+<corpo>
+    <label for="nota1">Primeira nota:</label>
+    <entrada id="nota1" tipo="número"><br>
+
+    <label for="nota2">Segunda nota:</label>
+    <entrada id="nota2" tipo="número"><br>
+
+    <button onclick="verificarAprovacao()">Verificar Aprovação</button>
+
+    <roteiro>
+        função verificarAprovacao() {
+            const nota1 = parseFloat(document.getElementById("nota1").value);
+            const nota2 = parseFloat(document.getElementById("nota2").value);
+            const media = (nota1 + nota2) / 2;
+
+            se (mídia >= 7) {
+                se (mídia === 10) {
+                    alert("Aprovado com distinção!");
+                } outro {
+                    alert("Aprovado! Média: " + media);
+                }
+            } senão se (mídia >= 5) {
+                alert("Recuperação! Média: " + media);
+            } outro {
+                alert("Reprovado! Média: " + media);
+            }
+        }
+    </script>
+</corpo>
+</html>
